@@ -2,7 +2,7 @@ import { useMemo } from "react";
 
 export const useSortedPosts = (posts, sort) => {
     const sortedPosts = useMemo(() => {
-        console.log('Отработала функция сортед пост')
+        // console.log('Отработала функция сортед пост')
         if(sort) {
           return [...posts].sort((a,b) => a[sort].localeCompare(b[sort]));
         }
